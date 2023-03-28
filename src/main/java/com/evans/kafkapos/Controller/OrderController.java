@@ -19,7 +19,7 @@ import java.util.List;
         }
 
         @PostMapping
-        public Order addOrder(@RequestBody Order order) {
+        public Order addOrder(@RequestBody Order order) throws Exception {
             return orderService.addOrder(order);
         }
 

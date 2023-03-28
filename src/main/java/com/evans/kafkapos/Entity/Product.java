@@ -13,7 +13,7 @@ public class Product {
     private Long id;
 
     @NotBlank(message = "Product name is required")
-    private String name;
+    private String productName;
 
     private String description;
 
@@ -31,12 +31,12 @@ public class Product {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getProductName() {
+        return productName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
     public String getDescription() {

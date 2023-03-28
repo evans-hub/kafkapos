@@ -29,7 +29,8 @@ public class OrderItem {
     @NotNull(message = "Price is required")
     private BigDecimal price;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+
+    @ManyToOne(fetch = FetchType.EAGER)
     @JsonIgnore
     private Order order;
 
